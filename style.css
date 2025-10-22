@@ -1,11 +1,59 @@
-h1,p{
-    font-family: ss;
-    background-color: blanchedalmond;
-    font-size: 60px;
-    text-align: center;
-    color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-    font-family: ss;
-    src: url("AirtravelerspersonaluseBdit-gxgyE.otf");
+html,body{
+  height: 100em;
+  width: 100em;
+
+}
+#main{
+  height: 30em;
+  width: 40em;
+  background-color: #f2eff2;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+.container>img{
+  width: 25em;
+  height: 25em;
+  animation: ci;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  position:sticky;
+  left: 10em;
+  top:3em
+  
+}
+@keyframes ci{
+    0%{transform: rotate(200deg);}
+
+
+    
+}
+
+.container2{
+  width: 15em;
+  height: 15em;
+  animation: si;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top:8em;
+  left:13em;
+  background-image: url("https://totalpng.com/public/uploads/thumbnail/fireworks-diwali-png-hddiwali-png-images-11664961134hcvkgncffc.png");
+  background-position: center;
+  background-size: cover;
+  
+ 
+}
+@keyframes si {
+  0%{background-image:url("https://png.pngtree.com/png-vector/20240122/ourmid/pngtree-bhai-dooj-indian-traditional-festival-png-image_11458881.png");}
+  25%{background-image: url("https://png.pngtree.com/png-clipart/20221008/original/pngtree-happy-bhai-dooj-png-image_8664496.png");}
+  50%{transform: scale(1.5);}
+  
 }
